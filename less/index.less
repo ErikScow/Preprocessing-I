@@ -53,7 +53,65 @@ table {
     box-sizing: border-box;
 }
 
+html{
+	font-size: 62.5%;
+}
+
 html, body {
 	height: 100%;
 }
 
+@font-color: crimson;
+
+.font-style-1{
+	color: @font-color;
+	font-size: 3rem;
+	font-family: 'Calistoga', cursive;
+}
+
+.font-style-2{
+	
+	font-family: 'Calistoga';
+	color: @font-color;
+	font-size: 2rem;
+}
+
+
+.flex-row-nowrap{
+	display:flex;
+	flex-flow:row nowrap;
+}
+
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	header{
+		nav{
+			width: 500px;
+			background: white;
+			position: fixed;
+			.flex-row-nowrap();
+			justify-content: space-between;
+
+			a{
+				text-decoration: none;
+				.font-style-2();
+				padding: 20px 0;
+			}
+		}
+	}
+	.top{
+		padding-top: 60px;
+		.flex-row-nowrap();
+		justify-content: center;
+	}
+	.image{
+		height: 450px;
+		width: 450px;
+	}
+	.intro-content{
+		height: 450px;
+		width: 450px;
+	}
+
+}
