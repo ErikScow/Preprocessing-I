@@ -139,26 +139,35 @@ body {
 }
 .font-style-1 {
   color: crimson;
-  font-size: 3rem;
-  font-family: 'Calistoga', cursive;
+  font-size: 4rem;
+  font-family: 'Calistoga';
 }
 .font-style-2 {
   font-family: 'Calistoga';
   color: crimson;
   font-size: 2rem;
 }
+.font-style-3 {
+  font-family: 'Calistoga';
+  color: black;
+  font-size: 1.5rem;
+}
 .flex-row-nowrap {
   display: flex;
   flex-flow: row nowrap;
 }
 .container {
-  width: 1000px;
+  width: 800px;
   margin: 0 auto;
+  font-family: 'Calistoga';
+  color: black;
+  font-size: 1.5rem;
 }
 .container header nav {
-  width: 500px;
+  width: 800px;
   background: white;
   position: fixed;
+  z-index: 100;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -176,11 +185,38 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
 }
+.container .wrapper {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .img-div {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
 .container .image {
-  height: 450px;
-  width: 450px;
+  transform: rotate(90deg);
+  height: 100%;
+  margin-top: 50px;
 }
 .container .intro-content {
-  height: 450px;
-  width: 450px;
+  height: 400px;
+  width: 400px;
+}
+.container .intro-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .intro-content h2 {
+  color: crimson;
+  font-size: 4rem;
+  font-family: 'Calistoga';
 }
