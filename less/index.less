@@ -55,9 +55,10 @@ table {
 
 html{
 	font-size: 62.5%;
+	background: aliceblue;
 }
 
-html, body {
+html, body{
 	height: 100%;
 }
 
@@ -82,6 +83,13 @@ html, body {
 	font-size: 1.5rem;
 }
 
+.button{
+	text-decoration: none;
+	.font-style-2();
+	padding: 10px 20px;
+	border: 1px solid @font-color;
+	border-radius: 100px;
+}
 
 .flex-row-nowrap{
 	display:flex;
@@ -94,20 +102,23 @@ html, body {
 	.font-style-3();
 	header{
 		nav{
+			padding: 10px 0;
 			width: 800px;
-			background: white;
+			background: aliceblue;
 			position: fixed;
-			z-index: 100;
+			z-index: 1;
 			.flex-row-nowrap();
 			justify-content: space-between;
+			border-bottom: 1px solid @font-color;
 
 			a{
 				text-decoration: none;
-				.font-style-2();
 				padding: 20px 0;
+				.button();
 			}
 		}
 	}
+
 	.top{
 		padding-top: 60px;
 		.flex-row-nowrap();
@@ -134,11 +145,13 @@ html, body {
 		height: 100%;
 		margin-top: 50px;
 	}
-	.intro-content{
+	.content{
+		height: 350px;
+		width: 350px;
+	}
+	.intro.content {
 		height: 400px;
 		width: 400px;
-	}
-	.intro-content{
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
@@ -146,7 +159,57 @@ html, body {
 		h2{
 		.font-style-1();
 		}
-	}
-	
 
+	}
+
+	hr{
+		border-top: 1px solid @font-color;
+		padding: 0;
+		margin: 0;
+	}
+
+	.vl{
+		height: 500px;
+		border-right: 1px solid @font-color;
+		margin-top: -51px;
+	}
+
+	.middle{
+		height: 100%;
+		padding: 50px 0;
+		.flex-row-nowrap();
+		justify-content: space-between;
+		h3{
+			.font-style-1();
+			padding-top: 10px;
+			text-align: center;
+		}
+		.skills{
+			li{ 
+				a{
+				text-decoration: none;
+				color: @font-color;
+				}
+				.button();
+				margin-top: 20px;
+				width: 100%;
+				text-align: center;
+			}
+		}
+		.work-history{
+			table{
+				margin-top: 20px;
+				width: 100%;
+				th{
+					font-weight: bold;
+				}
+				th, td{
+					text-align: right;
+					height: 50px;
+					padding: 15px 15px 15px 0;
+				}
+			}
+
+		}
+	}
 }

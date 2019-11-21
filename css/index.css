@@ -132,6 +132,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  background: aliceblue;
 }
 html,
 body {
@@ -152,6 +153,15 @@ body {
   color: black;
   font-size: 1.5rem;
 }
+.button {
+  text-decoration: none;
+  font-family: 'Calistoga';
+  color: crimson;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border: 1px solid crimson;
+  border-radius: 100px;
+}
 .flex-row-nowrap {
   display: flex;
   flex-flow: row nowrap;
@@ -164,20 +174,25 @@ body {
   font-size: 1.5rem;
 }
 .container header nav {
+  padding: 10px 0;
   width: 800px;
-  background: white;
+  background: aliceblue;
   position: fixed;
-  z-index: 100;
+  z-index: 1;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  border-bottom: 1px solid crimson;
 }
 .container header nav a {
+  padding: 20px 0;
   text-decoration: none;
   font-family: 'Calistoga';
   color: crimson;
   font-size: 2rem;
-  padding: 20px 0;
+  padding: 10px 20px;
+  border: 1px solid crimson;
+  border-radius: 100px;
 }
 .container .top {
   padding-top: 60px;
@@ -205,18 +220,73 @@ body {
   height: 100%;
   margin-top: 50px;
 }
-.container .intro-content {
+.container .content {
+  height: 350px;
+  width: 350px;
+}
+.container .intro.content {
   height: 400px;
   width: 400px;
-}
-.container .intro-content {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
-.container .intro-content h2 {
+.container .intro.content h2 {
   color: crimson;
   font-size: 4rem;
   font-family: 'Calistoga';
+}
+.container hr {
+  border-top: 1px solid crimson;
+  padding: 0;
+  margin: 0;
+}
+.container .vl {
+  height: 500px;
+  border-right: 1px solid crimson;
+  margin-top: -51px;
+}
+.container .middle {
+  height: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.container .middle h3 {
+  color: crimson;
+  font-size: 4rem;
+  font-family: 'Calistoga';
+  padding-top: 10px;
+  text-align: center;
+}
+.container .middle .skills li {
+  text-decoration: none;
+  font-family: 'Calistoga';
+  color: crimson;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border: 1px solid crimson;
+  border-radius: 100px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.container .middle .skills li a {
+  text-decoration: none;
+  color: crimson;
+}
+.container .middle .work-history table {
+  margin-top: 20px;
+  width: 100%;
+}
+.container .middle .work-history table th {
+  font-weight: bold;
+}
+.container .middle .work-history table th,
+.container .middle .work-history table td {
+  text-align: right;
+  height: 50px;
+  padding: 15px 15px 15px 0;
 }
