@@ -6,7 +6,13 @@
 
   <title>My Resume</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Open+Sans|Yeseva+One&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/index.css">
+
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +20,76 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#skills">Skills</a>
+        <a href="#work-history">Work History</a>
+        <a href="#contact">Contact Me</a>
+      </nav>
+    </header>
+    <section class="top" id="intro">
+      <div class="wrapper">
+       <div class="img-div">
+          <img class="image" src="img/20180612_115513.jpg"alt="Picture of Me">
+       </div>
+      </div>
+      <div class="intro content">
+        <h2>Erik Scow</h2>
+        <p>I am currently a student at Lambda School, where I am studying to become a software developer. After graduation from the program, I hope to get a job as a web developer. I am very dedicated to my trade and I always put my utmost effort into everything I produce.</p>
+      </div>
+    </section >
+
+    <hr>
+
+    <section class="middle" >
+      <div class="content skills" id="skills">
+        <h3>Skills</h3>
+        <ul>
+          <li><a href="#">Semantic HTML</a></li>
+          <li><a href="#">Responsive CSS</a></li>
+          <li><a href="#">CSS Preprocessors</a></li>
+          <li><a href="#">Making Pizza</a></li>
+          <li><a href="#">Elementary Javascript</a></li>
+        </ul>
+      </div>
+
+      <div class="vl"></div>
+
+      <div class="content work-history" id="work-history">
+        <h3>Work History</h3>
+        <table>
+          <tr>
+            <th>Yrs</th>
+            <th>Company</th>
+            <th>Job Title</th>
+          </tr>
+          <tr>
+            <td><1</td>
+            <td>Lambda Student</td>
+            <td>UI Developer</td>
+          </tr>
+          <tr>
+            <td><1</td>
+            <td>Lambda Student</td>
+            <td>CSS Developer</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Little Ceasars</td>
+            <td>Store Associate</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="bottom" id="contact">
+      <h3>Contact Me</h3>
+      <ul>
+        <li><span>Phone:</span> 559-359-0618</li>
+        <li><span>Email:</span> erikscow@gmail.com</li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
